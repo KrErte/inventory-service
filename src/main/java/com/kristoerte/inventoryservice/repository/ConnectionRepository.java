@@ -1,4 +1,4 @@
-package com.kristoerte.inventoryservice.repositories;
+package com.kristoerte.inventoryservice.repository;
 
 import com.kristoerte.inventoryservice.model.Connection;
 import org.springframework.stereotype.Repository;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class ConnectionRepository extends com.kristoerte.inventoryservice.repository.InMemoryRepository<Connection> {
+public class ConnectionRepository extends InMemoryRepository<Connection> {
 
     @Override
     protected String idOf(Connection item) {

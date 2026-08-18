@@ -1,4 +1,4 @@
-package com.kristoerte.inventoryservice.repositories;
+package com.kristoerte.inventoryservice.repository;
 
 import com.kristoerte.inventoryservice.model.Equipment;
 import org.springframework.stereotype.Repository;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class EquipmentRepository extends com.kristoerte.inventoryservice.repository.InMemoryRepository<Equipment> {
+public class EquipmentRepository extends InMemoryRepository<Equipment> {
 
     @Override
     protected String idOf(Equipment item) {
