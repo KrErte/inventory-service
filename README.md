@@ -96,3 +96,9 @@ Additional cases handled:
 - Add observability (structured logging, metrics, health checks)
 - Add integration tests with Testcontainers for database layer
 - Consider a graph database if connection traversal becomes the primary use case at scale
+
+## Other notices
+- I used Claude code for this task, I hope it was okay in 2026. I don't want to write boilerplate code so much anymore.
+- Examples what I had to fix manually. Claude made two different exception classes but I changed it to one with a String parameter. "GlobalException oleks üledisainitud — assignment hindab "practical technical decisions" ja "clear and understandable code". Jäta NotFoundException nii nagu on, see on selge ja piisav." my response to Claude "eiei, teeme üldise veahalduse, fuck mis seal kirjas on. See on minu arvates reasonable".
+- Also he did not put dtos in separate package, I had to move them manually
+  
